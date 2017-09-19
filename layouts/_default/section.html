@@ -1,0 +1,20 @@
+{{ partial "head" . }}
+<div class="container">
+  {{ partial "content/title" . }}
+  <div class="row">
+    <div class="col-12">
+      {{.Content}}
+    </div>
+    <div class="col-12">
+      <ul class="contents">
+        {{ range .Sections.ByWeight }}
+        <li><a href="{{ .Permalink }}">{{.Title}}</a></li>
+        {{ end }}
+        {{ range .Paginator.Pages.ByWeight }}
+        <li><a href="{{ .Permalink }}">{{.Title}}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+{{ partial "foot" . }}

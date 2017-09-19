@@ -1,0 +1,46 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="The Serverless Way" />
+
+<meta property="og:title" content="The Serverless Way">
+<meta property="og:site_name" content="The Serverless Way"/>
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:locale" content="{{ .Site.LanguageCode }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}assets/images/theserverlessway_social_media.jpg">
+
+
+<meta property="og:type" content="website" />
+<meta property="og:description" content="The Serverless Way"/>
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@flomotlik" />
+<meta name="twitter:creator" content="@flomotlik" />
+<meta name="twitter:title" content="The Serverless Way" />
+<meta name="twitter:description" content="The Serverless Way" />
+<meta name="twitter:url" content="{{ .Permalink }}" />
+<meta name="twitter:domain" content="{{ .Site.BaseURL }}">
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "{{ .Title }}",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+{{ .Site.Params.googleplus }}?rel=author"
+    },
+    "datePublished": "{{ .Date.Format "2006-01-02" }}",
+    "description": "The Serverless Way",
+    "wordCount": {{ .WordCount }}
+  }
+</script>
+
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "/touch-icon-144-precomposed.png" | absURL }}">
+<link href="{{ "/favicon.ico" | absURL }}" rel="icon">
+
+{{ .Hugo.Generator }}

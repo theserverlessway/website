@@ -1,0 +1,58 @@
+baseURL = "https://theserverlessway.com/"
+languageCode = "en-us"
+title = "The Serverless Way"
+
+[[menu.main]]
+    name = "Serverless"
+    weight = -120
+    identifier = "serverless"
+    url = "/serverless/"
+
+[[menu.main]]
+    name = "AWS Guide"
+    weight = -110
+    identifier = "aws"
+    url = "/aws/"
+
+[[menu.main]]
+    name = "Tools"
+    weight = -100
+    identifier = "tools"
+    url = "/tools"
+
+[[menu.main]]
+    name = "Consulting"
+    weight = -90
+    identifier = "consulting"
+    url = "/consulting"
+
+[[menu.main]]
+    name = "About"
+    weight = -80
+    identifier = "about"
+    url = "/about"
+
+[[menu.main]]
+    name = ""
+    pre = '<i class="fa fa-twitter" alt="Twitter Link" class="d-inline-block align-top"></i>'
+    weight = -70
+    identifier = "twitter"
+    url = "https://twitter.com/flomotlik"
+
+[[menu.side]]
+    name = "Guides"
+    weight = -80
+    identifier = "about"
+    url = "/about"
+
+[[menu.footer]]
+    name = "Contact"
+    weight = -3
+    identifier = "contact"
+    url = "/contact"
+
+[[menu.footer]]
+    name = "About"
+    weight = -1
+    identifier = "about"
+    url = "/about"
