@@ -11,3 +11,4 @@ Its better to think of the AWS CLI as a Shell SDK, the same way there are SDKs f
 
 This makes it possible to do nearly all of your work from your terminal without the need to go to the AWS console, making you a lot more productive and your infrastructure more automated.
 
+Following is a brief introduction to some basics of the AWS CLI as well as more advanced options like the `--output` and especially the `--query` option. Those can be used very effictively to build more complex tooling.
