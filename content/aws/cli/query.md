@@ -55,7 +55,7 @@ This is important when you use [`--output text`](TODO) as it will put every `Sta
 
 ### Create a new Hash with properties from a list of resources (JMESPath calls this a Hash Projection)
 
-This is especially helpful when you use the [`--output table`](TODO) option as it allows you to name the columns of your table and thus decide on the order. We're adding a number before every Field as `--output table` sorts the columns by name. If you want to add numbers and a `.` separator you have to put the hash key in `""`. This example is taken directly from [awsinfo](TODO) where it is used for the `awsinfo cfn` command.
+This is especially helpful when you use the [`--output table`](TODO) option as it allows you to name the columns of your table and thus decide on the order. We're adding a number before every field as `--output table` sorts the columns by name. If you want to add numbers and a `.` separator you have to put the hash key in `""`. This example is taken directly from [awsinfo](TODO) where it is used for the `awsinfo cfn` command.
 
 ```
 # aws cloudformation describe-stacks --query "Stacks[].{\"1.Name\":StackName,\"2.Status\":StackStatus,\"3.CreationTime\":CreationTime}"
@@ -113,7 +113,7 @@ JMESPath supports [many different functions](http://jmespath.org/specification.h
 ```
 # aws cloudformation describe-stacks --query "Stacks[?contains(StackName,'backend')].StackName"
 [
-    "tslw-website",
+    "tslw-backend",
 ]
 ```
 
