@@ -1,3 +1,4 @@
 ---
-title: Software Craftsmanship The Serverless Way
+title: Serverless and Software Craftsmanship
+weight: 200
 ---

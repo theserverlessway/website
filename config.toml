@@ -3,13 +3,13 @@ languageCode = "en-us"
 title = "The Serverless Way"
 
 [[menu.main]]
-    name = "Serverless"
+    name = "About Serverless"
     weight = -120
     identifier = "serverless"
     url = "/serverless/"
 
 [[menu.main]]
-    name = "AWS Guide"
+    name = "AWS Guides"
     weight = -110
     identifier = "aws"
     url = "/aws/"
