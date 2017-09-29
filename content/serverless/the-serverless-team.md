@@ -11,10 +11,29 @@ But in the end a purely technical discussion, while being interesting, doesn't r
 
 So what we're going after has more team and personal characteristics than purely technical ones. We want to:
 
-* Limit control over infrastructure to the necessary minimum
-* Limit responsibility for our infrastructure to the necessary minimum
+* Limit control and responsibility over infrastructure to the necessary minimum
 * Escalate control and responsibility only when necessary
 * Completely automate every step of development, release and operations to make changes easy and cheap
+
+## Limit control and responsibility?
+
+The limiting factor in most of our software efforts is developer time. We want to get the most out of it and try to be as productive as possible.
+
+Through new higher level cloud services like Lambda, S3, RDS or Rekognition we can build larger infrastructure much quicker, but at the same time we give up lots of control over the specifics of each piece.
+
+For example we can't tune our database in the same way we could if we ran it ourselves, but is that really necessary for the success of our product (and in some cases it might be).
+
+You can think of control and responsibility here also as the need for customisation. Do you need pieces in your infrastructure to be customised in a way that can't be done with existing cloud services? Would it be possible to combine other services to achieve that goal while still pushing as much of your infrastructure into services?
+
+And sometimes the answer is no and you have to run it yourself, but most of the time it should be perfectly fine to use and combine services.
+
+## But what about lock-in?
+
+Using high level cloud services (so anything above EC2 basically) leads to lock-in with a provider. There is no way around that really. The question is though how does this trade against being able to move faster and what scenarios does this not allow for in the future.
+
+I've often heard the example of moving your whole infrastructure from one cloud provider to another, but have rarely seen that actually happening. Oftentimes specific workloads are moved to another provider because they have better high level services in a specific area (e.g. AI from Google Cloud). Which makes total sense as you want to use the best services available to you.
+
+Multi-provider infrastructure is or will become a reality for many companies when they hit a large scale. The question is how to build your architecture in a way that allows you to move some pieces to another provider, while keeping others where they are because thats where they fit best.
 
 ## An example
 
