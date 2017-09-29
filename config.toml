@@ -15,7 +15,7 @@ title = "The Serverless Way"
     url = "/aws/"
 
 [[menu.main]]
-    name = "Tools"
+    name = "Tool Suite"
     weight = -100
     identifier = "tools"
     url = "/tools"
