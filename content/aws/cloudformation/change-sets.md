@@ -1,3 +1,4 @@
 ---
-title: Understanding CloudFormation Change Sets
+title: CloudFormation Change Sets
+weight: 2
 ---
