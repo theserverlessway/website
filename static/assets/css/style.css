@@ -1,0 +1,36 @@
+#main-navigation{
+  background-color: #313131;
+}
+
+.text-tslw{
+  color: #feb612 !important;
+}
+
+#main-navigation #navbarNav a{
+  color: #d3d3d3;
+}
+
+.guide a:hover{
+  text-decoration: none;
+  color: grey;
+}
+
+.guide a{
+  color: black;
+}
+
+#homepage-header{
+  background-color: #a3a3a3;
+}
+
+.footer{
+  border-top: 1px solid black;
+}
+
+h2 {
+  text-align: center;
+}
+
+.typeform-widget {
+  border: 1px solid grey;
+}

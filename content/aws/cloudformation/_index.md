@@ -1,5 +1,5 @@
 ---
-title: CloudFormation Guide - The Serverless Way
+title: Introduction to CloudFormation
 weight: 2
 ---
 

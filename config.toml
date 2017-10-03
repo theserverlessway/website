@@ -27,12 +27,6 @@ title = "The Serverless Way"
     url = "/consulting"
 
 [[menu.main]]
-    name = "About"
-    weight = -80
-    identifier = "about"
-    url = "/about"
-
-[[menu.main]]
     name = ""
     pre = '<i class="fa fa-twitter" alt="Twitter Link" class="d-inline-block align-top"></i>'
     weight = -70
