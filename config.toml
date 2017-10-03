@@ -46,7 +46,7 @@ title = "The Serverless Way"
     url = "/contact"
 
 [[menu.footer]]
-    name = "About"
+    name = "Consulting"
     weight = -1
-    identifier = "about"
-    url = "/about"
+    identifier = "consulting"
+    url = "/consulting"
