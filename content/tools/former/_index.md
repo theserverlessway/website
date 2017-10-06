@@ -12,6 +12,20 @@ To make this faster `Former` lets you create a full CF resource example for any 
 the [CloudFormation Resource Specification](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-resource-specification.html)
 to get the definition for all resources.
 
+## Installation
+
+former can be installed through pip:
+
+```shell
+pip install former
+```
+
+Alternatively you can clone this repository and run
+
+```shell
+python setup.py install
+```
+
 ## Example
 
 You can create an example for any aws resource by calling former with the service and resource name. In the following
