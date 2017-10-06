@@ -1,3 +1,8 @@
+---
+title: Template
+weight: 100
+---
+
 # `formica template`
 
 Load the CloudFormation template from the `*.template.(yml|yaml|json)` files in the current folder and print it.

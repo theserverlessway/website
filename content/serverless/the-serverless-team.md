@@ -1,5 +1,6 @@
 ---
 title: The Serverless Team
+subtitle: Why Serverless is more than just infrastructure
 weight: 100
 ---
 

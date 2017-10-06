@@ -1,5 +1,6 @@
 ---
-title: Guides to Serverless Infrastructure and Providers
+title: Serverless on Amazon Web Services
+subtitle: Learn the core Services so you can productively build on AWS
 ---
 
 Learning and fully understanding AWS is no easy task. With new features coming out daily and new services getting released at a faster and faster pace keeping up can be a challenge.

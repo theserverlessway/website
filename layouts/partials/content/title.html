@@ -1,7 +1,10 @@
-<div class="row pt-4 pb-4">
-  <div class="col text-center">
-    <header>
-      <h1>{{ if .IsPage }}{{ if .Draft }}{{ .Site.Data.Strings.draft }} :: {{ end }}{{ end }}{{ .Title }}</h1>
-    </header>
+<div class="container-fluid header">
+  <div class="row pt-4 pb-4">
+    <div class="col text-center">
+      <header>
+        <h1>{{ if .IsPage }}{{ if .Draft }}{{ .Site.Data.Strings.draft }} :: {{ end }}{{ end }}{{ .Title }}</h1>
+        <h2>{{ if .IsPage }}{{ if .Draft }}{{ .Site.Data.Strings.draft }} :: {{ end }}{{ end }}{{ .Params.subtitle }}</h2>
+      </header>
+    </div>
   </div>
 </div>

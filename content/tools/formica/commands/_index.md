@@ -1,14 +1,15 @@
 ---
-title: Formica Commands Reference
+title: Commands Reference
+disable_section_links: true
 weight: 100
 ---
 
-* [change:](commands/change.md) Create a change set for an existing stack
-* [deploy:](commands/deploy.md) Deploy the latest change set for a stack
-* [describe:](commands/describe.md) Describe the latest change set
-* [diff](commands/diff.md) Print a diff between local and deployed stack
-* [new:](commands/new.md) Create a change set for a new stack
-* [remove:](commands/remove.md) Remove the configured stack
-* [resources:](commands/resources.md) List all resources of a stack
-* [stacks:](commands/stacks.md) List all stacks
-* [template:](commands/template.md) Print the current template
+* [change:](change) Create a change set for an existing stack
+* [deploy:](deploy) Deploy the latest change set for a stack
+* [describe:](describe) Describe the latest change set
+* [diff](diff) Print a diff between local and deployed stack
+* [new:](new) Create a change set for a new stack
+* [remove:](remove) Remove the configured stack
+* [resources:](resources) List all resources of a stack
+* [stacks:](stacks) List all stacks
+* [template:](template) Print the current template

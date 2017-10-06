@@ -1,6 +1,8 @@
 ---
-title: AWSie - CloudFormation aware AWS CLI wrapper
+title: AWSie
+subtitle: CloudFormation aware AWS CLI wrapper
 weight: 400
+disable_pagination: true
 ---
 
  [![Build Status](https://travis-ci.org/flomotlik/awsie.svg?branch=master)](https://travis-ci.org/flomotlik/awsie)

@@ -1,3 +1,8 @@
+---
+title: Remove
+weight: 100
+---
+
 # `formica remove`
 
 Through the remove command you can remove an existing stack.

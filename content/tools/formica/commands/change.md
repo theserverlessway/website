@@ -1,3 +1,8 @@
+---
+title: Change
+weight: 100
+---
+
 # `formica change`
 
 Through the change command you can upload your local template to CloudFormation and create a new Changeset for an existing stack. It will fail if the stack doesn't already exist. If you want to create a ChangeSet for a new stack check out `formica new`(new.md). You can see the full template that will be used by running [`formica template`](template.md).

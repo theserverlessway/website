@@ -1,3 +1,8 @@
+---
+title: New
+weight: 100
+---
+
 # `formica new`
 
 Through the new command you can upload your local template to CloudFormation and create a new ChangeSet for a new stack. CloudFormation will create a stack in the **REVIEW_IN_PROGRESS** state until the ChangeSet is deployed. It will fail if the stack already exists. If you decide to not execute the ChangeSet you need to use [`formica remove`](remove.md) to remove the stack and run `formica new` again. After executing it you have to use `formica change`(change.md) to update the Stack. You can see the full template that will be used by running [`formica template`](template.md).

@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <div class="container">
+    <div class="row w-100">
+      {{ if not (eq .Parent.Kind "home") }}
+        <a class="btn btn-light col-12" href="{{ .Parent.Permalink }}">Back to Overview</a>
+      {{ end }}
+    {{ range (sort (union .Sections .Paginator.Pages) ".Params.weight") }}
+      <a class="btn btn-light col-12 col-sm"  href="{{ .Permalink }}">{{.Title}}</a>
+    {{ end }}
+    </div>
+  </div>
+</nav>

@@ -1,5 +1,6 @@
 ---
 title: Consulting Services
+subtitle: Experience you can benefit from
 ---
 
 <img src="/assets/images/headshots/flo.jpg" alt="Headshot Florian Motlik" class="img-fluid float-left mr-5"></img>

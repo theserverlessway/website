@@ -1,5 +1,6 @@
 ---
-title: What is Serverless, an Introduction
+title: Introduction to Serverless
+subtitle: What it means and how you can do it too
 ---
 
 The term Serverless has been discussed and rediscussed, thrown out, brought back in and redefined too many times to count at this point. Most people have their own description and sometimes they differ wildly.

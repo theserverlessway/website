@@ -1,3 +1,8 @@
+---
+title: Deploy
+weight: 100
+---
+
 # `formica deploy`
 
 Through the deploy command you can execute a previously created ChangeSet. This works for both the [`formica new`](new.md) and [`formica change`](change.md) ChangeSets.

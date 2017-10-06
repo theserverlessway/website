@@ -1,6 +1,8 @@
 ---
-title: Former - CloudFormation resource examples the easy way
+title: Former
+subtitle: CloudFormation resource examples the easy way
 weight: 300
+disable_pagination: true
 ---
 
 CloudFormation supports lots of different AWS Resources with many parameters. Remembering all of them is a pain

@@ -1,3 +1,8 @@
+---
+title: Describe
+weight: 100
+---
+
 # `formica describe`
 
 Through the describe command you can see the changes that would be performed with the current ChangeSet. The output

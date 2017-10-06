@@ -1,5 +1,5 @@
 ---
-title: Formica Configuration File Reference
+title: Configuration File Reference
 weight: 300
 ---
 

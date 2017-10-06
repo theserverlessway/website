@@ -1,5 +1,5 @@
 ---
-title: Formica Module System
+title: Modules
 weight: 400
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: Formica - The CloudFormation client you will love
+title: Formica
+subtitle: The CloudFormation client you will love
 weight: 100
 ---
 

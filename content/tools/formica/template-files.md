@@ -1,5 +1,5 @@
 ---
-title: Formica Template File Reference
+title: Template File Reference
 weight: 200
 ---
 

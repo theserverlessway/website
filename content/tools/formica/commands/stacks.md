@@ -1,3 +1,8 @@
+---
+title: Stacks
+weight: 100
+---
+
 # `formica stacks`
 
 Through the stack command you can get an overview over all the CloudFormation stacks that are in the region you specified.

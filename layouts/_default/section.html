@@ -1,17 +1,5 @@
 {{ partial "head" . }}
-<div class="container">
-  {{ partial "content/title" . }}
-  <div class="row">
-    <div class="col-12">
-      {{.Content}}
-    </div>
-    <div class="col-12">
-      <ul class="contents">
-        {{ range (sort (union .Sections .Paginator.Pages) ".Params.weight") }}
-          <li><a href="{{ .Permalink }}">{{.Title}}</a></li>
-        {{ end }}
-      </ul>
-    </div>
-  </div>
-</div>
+{{ partial "content/title" . }}
+{{ partial "nav/section" . }}
+{{ partial "content" . }}
 {{ partial "foot" . }}

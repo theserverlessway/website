@@ -1,3 +1,8 @@
+---
+title: Diff
+weight: 100
+---
+
 # `formica diff`
 
 Through the diff command you can see exactly what changed in your template compared to what is already deployed in your stack. It uses [DeepDiff](https://github.com/seperman/deepdiff) to compare the two templates and show you detailed results.

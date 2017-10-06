@@ -1,3 +1,8 @@
+---
+title: Resources
+weight: 100
+---
+
 # `formica resources`
 
 Through the resources command you can list all resources for a deployed stack so its easy for you to get the physical id of a resource you deployed.

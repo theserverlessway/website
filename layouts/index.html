@@ -1,44 +1,47 @@
 {{ partial "head" . }}
-<div class="container-fluid pb-4 pt-4" id="homepage-header">
+<div class="container-fluid header">
   <div class="container pt-4 pb-4">
     <div class="row text-center">
         <div class="col-12 mb-3">
-          <h1><span class="d-block d-lg-inline">Build your infrastructure</span> <span>The Serverless Way</span></h1>
+          <h1><span class="d-block d-lg-inline">Build your infrastructure</span> <span class="text-tslw">The Serverless Way</span></h1>
         </div>
         <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-          <a href="#guides" class="btn btn-dark btn-block">Learn from our Guides and Tooling</a>
+          <a href="#guides" class="btn btn-light btn-block">Learn from our Guides and Tooling</a>
         </div>
         <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-          <a href="/consulting" class="btn btn-dark btn-block">Work with us to improve your infrastructure</a>
+          <a href="/consulting" class="btn btn-light btn-block">Work with us to become more productive</a>
         </div>
     </div>
   </div>
 </div>
-<div class="container-fluid" id="guides">
-  <div class="container pt-4">
+<div class="container-fluid mt-5" id="guides">
+  <div class="container">
     <h2 class="text-center mb-3">Guides and Tooling</h2>
     <div class="row" id="homepage-guides">
       <div class="col-12 col-sm-12 col-md-4 card guide">
         <a href="/serverless">
           <div class="card-body">
-            <h3 class="card-title">About Serverless</h3>
+            <a href="/serverless">
+              <h3 class="card-title">About Serverless</h3>
+            </a>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Introduction to Serverless</li>
-              <li class="list-group-item">The Serverless Team</li>
-              <li class="list-group-item">Serverless and Software Craftsmanship</li>
+              <li class="list-group-item"><a href="/serverless/the-serverless-team">The Serverless Team</li>
+              <li class="list-group-item"><a href="/serverless/software-craftsmanship">Serverless and Software Craftsmanship</li>
             </ul>
           </div>
         </a>
       </div>
       <div class="col-12 col-sm-12 col-md-4 card guide">
-        <a href="/aws">
+
           <div class="card-body">
-            <h3 class="card-title">AWS Services</h3>
+            <a href="/aws">
+              <h3 class="card-title">AWS Services</h3>
+            </a>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">CloudFormation</li>
-              <li class="list-group-item">AWS CLI</li>
-              <li class="list-group-item">IAM</li>
-              <li class="list-group-item">CloudWatch</li>
+              <li class="list-group-item"><a href="/aws/cloudformation">CloudFormation</a></li>
+              <li class="list-group-item"><a href="/aws/cli">AWS CLI</a></li>
+              <li class="list-group-item"><a href="/aws/iam">IAM</a></li>
+              <!-- <li class="list-group-item"><a href="/aws/cli">CloudWatch</a></li> -->
             </ul>
           </div>
         </a>
@@ -46,12 +49,13 @@
       <div class="col-12 col-sm-12 col-md-4 card guide">
         <a href="/tools">
           <div class="card-body">
-            <h3 class="card-title">Tool Suite</h3>
+            <a href="/tools">
+              <h3 class="card-title">Tool Suite</h3>
+            </a>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Formica</li>
-              <li class="list-group-item">AWSInfo</li>
-              <li class="list-group-item">AWSie</li>
-              <li class="list-group-item">And more...</li>
+              <li class="list-group-item"><a href="/tools/formica">Formica</a></li>
+              <li class="list-group-item"><a href="/tools/awsinfo">AWSInfo</a></li>
+              <li class="list-group-item"><a href="/tools">And more...</li>
             </ul>
           </div>
         </a>
@@ -60,11 +64,11 @@
   </div>
 </div>
 
-<div class="container text-center mt-3">
+<div class="container text-center mt-5">
   <div class="row">
     <div class="col-12">
       <h2 class="mb-3">Consulting Services</h2>
-      <p>Fill out the following form so we can contact you about our consulting services.</p>
+      <p class="mb-0">Fill out the following form so we can contact you about our consulting services.</p>
       <p>Check out our <a href="/consulting">consulting page</a> to learn more.</p>
     </div>
     <div class="col-12">
