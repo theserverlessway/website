@@ -32,7 +32,7 @@ can be written as
 !Sub ${WebBucket.Arn}*
 ```
 
-All example in this doc will use the shorthand yaml syntax. For other syntax options please check the [official docs](TODO)
+All example in this doc will use the shorthand yaml syntax. For other syntax options please check the [AWS docs](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
 
 ## Ref
 
@@ -46,6 +46,8 @@ In the template docs before we used the following to reference the WebBucketName
 BucketName: !Ref WebBucketName
 ```
 
+[AWS documentation](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html)
+
 ## GetAtt
 
 Most resources allow you to access further information beside what is available thorugh `!Ref`. You will use those all the time to make resources work together. In the template docs example we used it to access the S3 Buckets WebsiteUrl.
@@ -58,6 +60,8 @@ Value: !GetAtt WebBucket.WebsiteURL
 
 The documentation for each resource has a `Return Values` section that documents all the different values you can access.
 
+[AWS documentation](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html)
+
 ## Sub
 
 Through the `Sub` function you can build a string and substitue parts of it with values from variables. Those variables can be anything from results of `!Ref` or `!GetAtt` calls to using `!If` to set variables depending on template parameters.
@@ -66,6 +70,8 @@ The most common use cases we see for `!Sub` are:
 
 * Create a string that you want to embed results from `!Ref` or `!GetAtt` into
 * Create large text that you want to parameterize, e.g a config file for an EC2 instance
+
+[AWS documentation](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-sub.html)
 
 ### Embedding Ref or GetAtt
 
@@ -124,19 +130,19 @@ UserData:
           Fn::ImportValue: "install-stack:InstallBucket"
 ```
 
-Now this is a simple example of what you can do in the Variables. It can go to any complexity you want as it allows you to use most other functions CloudFormation provides. Check out the [full documentation](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-sub.html) for all details.
+Now this is a simple example of what you can do in the Variables. It can go to any complexity you want as it allows you to use most other functions CloudFormation provides.
 
 ## Select
 
-Select allows you to select one item from a list. Its especially helpful to use with the Split function.
+Select allows you to select one item from a list. Its especially helpful to use with the Split function to split parameters or attributes of resources and select specific parts.
 
-You can use
+```
+!Select [2, !Split ['/', !GetAtt 'WebBucket.WebsiteURL']]
+```
 
-## Split and Join
+[AWS documentation](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-select.html)
 
-`Split` and `Join` allow you to split a string into a list of elements and join a list back into a string.
-
-### Join
+## Join
 
 With `Join` you can take a list of elements and turn them into a string, for example a list of SecurityGroups into a comma separated string output:
 
@@ -147,7 +153,9 @@ Outputs:
     Value: !Join [',', !GetAtt LoadBalancer.SecurityGroups]
 ```
 
-### Split
+[Join documentation](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-join.html)
+
+## Split
 
 The most common use case with `Split` we've come across so far is splitting a value requested from either a resource in the same template or after importing it from another stack.
 
@@ -172,9 +180,9 @@ Another common usecase is splitting an imported Value. CloudFormation Outputs ha
 !Select [2, !Split [",", !ImportValue loadbalancer-stack:SecurityGroups]]
 ```
 
-Check out the [full Split documentation](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-split.html) for all details on the `Split` function.
+[AWS documentation](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-split.html)
 
-### Extending a list with Split and Join
+### Combine Split and Join to append to a list
 
 Sometimes you want to put a comma separated list of parameters into a stack or import a comma separated string from another stack, but then add additional elements to that list before using them with a resource.
 
@@ -213,3 +221,5 @@ ImportValue is pretty straight forward, you tell it which Export it should impor
 ```
 !Split [",", !ImportValue loadbalancer-stack:SecurityGroups]
 ```
+
+[AWS documentation](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-importvalue.html)
