@@ -5,7 +5,7 @@ weight: 100
 
 # `formica deploy`
 
-Through the deploy command you can execute a previously created ChangeSet. This works for both the [`formica new`](new.md) and [`formica change`](change.md) ChangeSets.
+Through the deploy command you can execute a previously created ChangeSet. This works for both the [`formica new`]({{< relref "new.md" >}}) and [`formica change`]({{< relref "change.md" >}}) ChangeSets.
 
  After starting the update to the stack it will follow the stack events until the deployment is finshed. In case the deployment failed it will exit with a non-zero exit status.
 

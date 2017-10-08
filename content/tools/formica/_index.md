@@ -6,7 +6,7 @@ weight: 100
 
 [![Build Status](https://travis-ci.org/flomotlik/formica.svg?branch=master)](https://travis-ci.org/flomotlik/formica)
 [![PyPI version](https://badge.fury.io/py/formica-cli.svg)](https://pypi.python.org/pypi/formica-cli)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/flomotlik/awsinfo/blob/master/LICENSE)
 [![Coverage Status](https://coveralls.io/repos/github/flomotlik/formica/badge.svg?branch=master)](https://coveralls.io/github/flomotlik/formica?branch=master)
 
 Formica makes it easy to create and deploy CloudFormation stacks. It uses CloudFormation syntax with yaml and json support to define your templates. Any existing stack can be used directly, but formica also has built-in modularity so you can reuse and share CloudFormation stack components easily. This allows you to start from an existing stack but split it up into separate files easily.
@@ -28,7 +28,7 @@ Alternatively you can clone this repository and run
 python setup.py install
 ```
 
-After installing Formica take a look at the [quick start guide](#quick-start-guide) or the [in-depth documentation](docs#formica-documentation) and [examples](docs#examples)
+After installing Formica take a look at the [quick start guide](#quick-start-guide) or the [examples](examples)
 
 ## Why
 
@@ -41,8 +41,6 @@ Our goal is that you should never have to log into the AWS Console to look at yo
 Formica supports all the standard AWS credential settings, so you can use profiles through the `--profile` option and set the AWS region with `--region`. If you provide no specific profile Formica will use the default profile. You can also use environment variables like **AWS_ACCESS_KEY_ID**. Take a look at the [AWS credentials docs](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) for more details on how to configure these credentials.
 
 ## Quick Start Guide
-
-You can also jump to the [in-depth docs](docs) for more information.
 
 You define your CloudFormation template through `*.template.(json/yaml/yml)` files. All files named `*.template.(json/yaml/yml)` in the current working directory will be loaded and merged into one large template file before being deployed. This makes it easy to split up your resource files and make each individual file smaller and easier to understand. You can mix `json` and `yaml` files in one directory, which is especially helpful when you start with an existing stack (e.g. one written in JSON) but want to slowly move resources into `yaml` files.
 
@@ -94,7 +92,7 @@ Resource Changes:
 Change set created, please deploy.
 ```
 
-You can also use [`formica describe`](docs/commands/describe.md) to describe the changes a ChangeSet would perform in a later step. For more detail on the ChangeSet description check out the [describe command documentation](docs/commands/describe.md).
+You can also use [`formica describe`]({{< relref "tools/formica/commands/describe.md" >}}) to describe the changes a ChangeSet would perform in a later step. For more detail on the ChangeSet description check out the [describe command documentation]({{< relref "tools/formica/commands/describe.md" >}}).
 
 All changes, whether you want to create a new stack or update an existing one, are done through [ChangeSets](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-changesets.html). This makes sure you can inspect the specific actions that CloudFormation will take before deploying them. In a CI context you can of course simply run both commands one after the other to get a fully automated deployment.
 
@@ -123,7 +121,7 @@ After the deployment we will now see our new S3 Bucket. As we didn't set a name 
 
 ### Creating a Config File
 
-So we don't have to specify the stack name for every command we can also create a config file. The `stack.config.yaml` file we create contains only the stack name but check out the [config file documentation](docs/config-file.md) for all available options. Add the following content to `stack.config.yaml`. While there is no fixed naming convention *.config.yaml is a best practice:
+So we don't have to specify the stack name for every command we can also create a config file. The `stack.config.yaml` file we create contains only the stack name but check out the [config file documentation]({{< relref "config-file.md" >}}) for all available options. Add the following content to `stack.config.yaml`. While there is no fixed naming convention *.config.yaml is a best practice:
 
 ```yaml
 stack: teststack
@@ -147,7 +145,7 @@ root@67c57a89511a:/app/docs/examples/s3-bucket# formica resources -c stack.confi
 
 ### Changing the Stack
 
-To add additional resources you can either add it to the file we already created, or put it in a separate file for better modularity. Especially when you have many resources splitting them up into separate files can be very helpful. Check out the [template file documentation](template-files.md) for more documentation on template files and the [module system](docs/modules.md) for even more ways to split up your templates and make them reusable.
+To add additional resources you can either add it to the file we already created, or put it in a separate file for better modularity. Especially when you have many resources splitting them up into separate files can be very helpful. Check out the [template file documentation]({{< relref "template-files.md" >}}) for more documentation on template files and the [module system]({{< relref "modules.md" >}}) for even more ways to split up your templates and make them reusable.
 
 If we want to add an additional bucket we can add a second file `bucket2.template.json` file with the following content:
 

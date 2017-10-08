@@ -22,7 +22,7 @@ root@61aaad32daf7:/app/docs/examples/s3-bucket# formica diff --stack teststack
 
 As you can see it will show the path of the property that was changed, what it was before and after and what kind of change it was.
 
-Together with [`formica describe`](describe.md) you can understand exactly what has changed in your template and how that will influence your deployed stack.
+Together with [`formica describe`]({{< relref "describe.md" >}}) you can understand exactly what has changed in your template and how that will influence your deployed stack.
 
 ## Options
 

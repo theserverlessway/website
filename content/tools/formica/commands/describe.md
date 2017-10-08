@@ -6,12 +6,12 @@ weight: 100
 # `formica describe`
 
 Through the describe command you can see the changes that would be performed with the current ChangeSet. The output
-created by the describe command is also printed when running [`formica new`](new.md) or [`formica change`](change.md).
+created by the describe command is also printed when running [`formica new`]({{< relref "new.md" >}}) or [`formica change`]({{< relref "change.md" >}}).
 
 ## Example
 
 Before printing the actual changes the output constists of all parameters, tags and capabilities given to either
-[`formica new`](new.md) or [`formica change`](change.md) when creating the ChangeSet.
+[`formica new`]({{< relref "new.md" >}}) or [`formica change`]({{< relref "change.md" >}}) when creating the ChangeSet.
 
 After that a table with the following action will be printed:
 
