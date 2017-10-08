@@ -6,7 +6,7 @@ weight: 200
 
 With DevOps and now Serverless we've seen new trends that required developers to view their role in the development cycle in a new light. The distinction between operations and development have loosened. Developers need to consider the environment and infrastructure their applications run in a lot more and similarly operations teams do more of their work by developing automation software, similar to how developers work.
 
-Oftentimes developers even create and help manage the infrastructure their applications run in through [CloudFormation](TODO) or other automation tooling.
+Oftentimes developers even create and help manage the infrastructure their applications run in through [CloudFormation](/aws/cloudformation) or other automation tooling.
 
 The enormous number of existing and newly released cloud services by each provider require us to rethink our approach here though. The larger the number of services have become the more tools have come out to try to get this complexity under control and make things simpler. Through attempts of standardisation we've tried to create a more rigurious, a more engineered, approach to building infrastructure in this complex environment.
 
@@ -34,7 +34,7 @@ And those basic building blocks have never been easier to use and learn than tod
 
 Every provider has their own set of tools, following are links to all guides for AWS tools and services you can find on this site.
 
-* [***CloudFormation***](TODO) to create, deploy and modify your cloud infrastructure
-* [***AWS CLI***](TODO) to interact with AWS APIs and build tools with
-* [***IAM***](IAM) to manage access to your cloud resources
-* [***CloudWatch***](CloudWatch) to monitor and operate your infrastructure and alert you when necessary
+* [***CloudFormation***](/aws/cloudformation) to create, deploy and modify your cloud infrastructure
+* [***AWS CLI***](/aws/cli) to interact with AWS APIs and build tools with
+* [***IAM***](/aws/iam) to manage access to your cloud resources
+* ***CloudWatch*** to monitor and operate your infrastructure and alert you when necessary

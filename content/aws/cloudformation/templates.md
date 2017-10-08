@@ -56,7 +56,7 @@ For example S3 bucket names have to be unique across all of S3. If you rely on a
 When writing CloudFormation templates you will constantly look up the properties and specific names of your resources. To help with that you have a few different options:
 
 1. Save the [Resource Types Reference](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html) in your Browser so you can be there quickly.
-2. Use `former` from our Tool Suite to get all attributes of a specific type in your command line. Check out the [former docs](TODO) for more information and a tutorial.
+2. Use `former` from our Tool Suite to get all attributes of a specific type in your command line. Check out the [former docs](/tools/former) for more information and a tutorial.
 3. If you're on a Mac buy [Dash](https://kapeli.com/dash) and get an offline documentation browser. It's great and will improve your productivity a lot.
 
 ### Links
@@ -88,8 +88,6 @@ Resources:
 Parameters support many different types like `String`, `Number` or `CommaDelimitedList`. Check out the types in the [Parameters Documentation](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html) for all details.
 
 Parameters also support a lot of other properties like `Default` (which we'll use in a second), `AllowedValues` or `MinLength`. Make sure you read through all the different properties in the [Parameters Documentation](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html).
-
-### Links
 
 * [Parameters Documentation](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html)
 
@@ -135,7 +133,7 @@ But the WebBucket still requires `WebBucketName` to be set, which goes against w
 
 CloudFormation doesn't allow us to use the empty string in the `BucketName` though, so we have to use an `If` together with the `AWS::NoValue` built-in to let CloudFormation know to simply remove that Property from the template. It will be treated as if it were never set, thus telling CF to auto-generate the `BucketName`
 
-The syntax for the different built-in functions (`If`, `Equal`, `Not` in this case) are a bit confusing at first, as you have to use lists or sometimes lists of lists. For more details check out the [built-in functions guide](TODO).
+The syntax for the different built-in functions (`If`, `Equal`, `Not` in this case) are a bit confusing at first, as you have to use lists or sometimes lists of lists. For more details check out the [built-in functions guide]({{< relref "aws/cloudformation/template-functions.md" >}}).
 
 ```yaml
 Parameters:
@@ -168,7 +166,7 @@ Resources:
         IndexDocument: index.html
 ```
 
-For more information check out the [AWS Conditions Documentation](TODO) and take a look at our [Condition Examples] for standard use cases and examples for conditions.
+For more information check out the [AWS Conditions Documentation](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html) and take a look at our [Condition Examples] for standard use cases and examples for conditions.
 
 ## Outputs
 
@@ -179,7 +177,7 @@ Outputs allow you to:
 
 Often its helpful for your Stack to export some values that can be read by the developers after the stack has been deployed or updated. This can include attributes of resources or other significant values.
 
-For the following example we want to get the `WebsiteUrl` for our web and dev bucket so we can access the website after deployment. Most Resources allow you to access attributes of the deployed resource through the [`GetAtt` function](TODO). The `!GetAtt RESOURCE.ATTRIBUTE` syntax is a shorthand available in yaml files.
+For the following example we want to get the `WebsiteUrl` for our web and dev bucket so we can access the website after deployment. Most Resources allow you to access attributes of the deployed resource through the [`GetAtt` function]({{< relref "template-functions.md#getatt" >}}). The `!GetAtt RESOURCE.ATTRIBUTE` syntax is a shorthand available in yaml files.
 
 You can find those values in the `Return Values` section of each [Resource documentation page](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
 
@@ -219,7 +217,7 @@ Outputs:
 
 A great feature of CloudFormation for organising your resources in separate stacks is the export/import feature. It allows to export data from one stack and import it in another. As long as another stack is importing values the stack that exported them can't be removed and neither can the exported outputs themselves.
 
-We're using the [`!Sub` function](TODO) as it is the easiest way to combine values into a string. It's considered a best practice to add the stack name as a prefix of the exported name. `AWS::StackName` is one of several [Pseudo Parameters](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html) AWS supports in CloudFormation templates.
+We're using the [`!Sub` function]({{< relref "template-functions.md#sub" >}}) as it is the easiest way to combine values into a string. It's considered a best practice to add the stack name as a prefix of the exported name. `AWS::StackName` is one of several [Pseudo Parameters](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html) AWS supports in CloudFormation templates.
 
 ```
 Outputs:

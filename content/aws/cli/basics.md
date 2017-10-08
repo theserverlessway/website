@@ -3,7 +3,7 @@ title: Basics
 weight: 1
 ---
 
-The AWS Cli is written in Python and uses the [boto3](TODO) library as its interface to AWS. Boto3 is a very powerful and elegant library if you want to interact with AWS in your code.
+The AWS Cli is written in Python and uses the [boto3](https://boto3.readthedocs.io/en/latest/) library as its interface to AWS. Boto3 is a very powerful and elegant library if you want to interact with AWS in your code.
 
 You can typically install it with `pip install awscli`
 

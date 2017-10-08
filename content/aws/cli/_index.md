@@ -7,7 +7,7 @@ The AWS CLI is the main tool to interact with AWS from your command line. All it
 
 The downside of the direct representation though is that its quite cumbersome to use as you have to remember long command and argument names. While this is ok for commands you call very often, it quickly becomes tiresome when you need to remember commands and arguments you use rarely.
 
-Its better to think of the AWS CLI as a Shell SDK, the same way there are SDKs for any other programming language. Together with [other shell tools](TODO) it can become a very powerful and easy to use building block for your own tools.
+Its better to think of the AWS CLI as a Shell SDK, the same way there are SDKs for any other programming language. Together with [other shell tools](/tools/other) it can become a very powerful and easy to use building block for your own tools.
 
 This makes it possible to do nearly all of your work from your terminal without the need to go to the AWS console, making you a lot more productive and your infrastructure more automated.
 

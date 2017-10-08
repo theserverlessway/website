@@ -71,4 +71,4 @@ In case you don't want to set specific headers you can also simply create a list
 +-------------------------------+----------------------------+----------------------------+
 ```
 
-For more examples check out [awsinfo](TODO) and its source code as it uses `--query` and `--output` extensively to create a better user experience on top of the AWS CLI.
+For more examples check out [awsinfo](/tools/awsinfo) and its source code as it uses `--query` and `--output` extensively to create a better user experience on top of the AWS CLI.

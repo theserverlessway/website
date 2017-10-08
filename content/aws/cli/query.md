@@ -17,7 +17,7 @@ The following very simple example will only select the names of CloudFormation s
 ]
 ```
 
-This together with the `--output` option and its text or table output give you a lot of control over how to present information from the AWS CLI. They can be easily chained together to build powerful tools, for example [awsinfo](TODO) is written completely in bash and uses the `--query` option extensively to give you quick access to the most important information on your AWS resources. You can also check out the [awsinfo code](TODO) to see many examples of JMESPath.
+This together with the `--output` option and its text or table output give you a lot of control over how to present information from the AWS CLI. They can be easily chained together to build powerful tools, for example [awsinfo](/tool/awsinfo) is written completely in bash and uses the `--query` option extensively to give you quick access to the most important information on your AWS resources. You can also check out the [awsinfo code](https://github.com/flomotlik/awsinfo/tree/master/scripts/commands) to see many examples of JMESPath.
 
 This makes it even clearer that the AWS CLI is great as a Shell SDK. You can easily write shell scripts or Makefiles that call the AWS CLI with the `--query` and `--output` option.
 
@@ -39,7 +39,7 @@ The same as the example above where we just want to know the `StackName` for eve
 
 ### Select a property from a list of resources with each property in its own list
 
-This is important when you use [`--output text`](TODO) as it will put every `StackName` in its own line so they can be processed by other tools like [xargs](TODO), [sed](TODO), or [awk](TODO).
+This is important when you use `--output text` as it will put every `StackName` in its own line so they can be processed by other tools like xargs, sed, or awk.
 
 ```
 # aws cloudformation describe-stacks --query "Stacks[].[StackName]"
@@ -55,7 +55,7 @@ This is important when you use [`--output text`](TODO) as it will put every `Sta
 
 ### Create a new Hash with properties from a list of resources (JMESPath calls this a Hash Projection)
 
-This is especially helpful when you use the [`--output table`](TODO) option as it allows you to name the columns of your table and thus decide on the order. We're adding a number before every field as `--output table` sorts the columns by name. If you want to add numbers and a `.` separator you have to put the hash key in `""`. This example is taken directly from [awsinfo](TODO) where it is used for the `awsinfo cfn` command.
+This is especially helpful when you use the `--output table` option as it allows you to name the columns of your table and thus decide on the order. We're adding a number before every field as `--output table` sorts the columns by name. If you want to add numbers and a `.` separator you have to put the hash key in `""`. This example is taken directly from [awsinfo](/tools/awsinfo) where it is used for the `awsinfo cfn` command.
 
 ```
 # aws cloudformation describe-stacks --query "Stacks[].{\"1.Name\":StackName,\"2.Status\":StackStatus,\"3.CreationTime\":CreationTime}"
@@ -77,7 +77,7 @@ JMESPath doesn't have a shorthand syntax for selecting properties and reusing th
 
 ### Create a new List with properties from a list of resources (JMESPath calls this a Hash Projection)
 
-This is especially helpful when you use the [`--output text`](TODO) option together with text processing tools like [awk](TODO) as it will print out each sublist on a tab separated line.
+This is especially helpful when you use the `--output text` option together with text processing tools like awk as it will print out each sublist on a tab separated line.
 
 ```
 # aws cloudformation describe-stacks --query "Stacks[].[StackName, StackStatus, CreationTime]"
@@ -117,7 +117,7 @@ JMESPath supports [many different functions](http://jmespath.org/specification.h
 ]
 ```
 
-This is used extensively in [awsinfo](TODO) to allow you to give only part of a resource name and match all resources that have the part in their name (or other properties depending on the resource).
+This is used extensively in [awsinfo](/tools/awsinfo) to allow you to give only part of a resource name and match all resources that have the part in their name (or other properties depending on the resource).
 
 ### Sort resources by a property
 

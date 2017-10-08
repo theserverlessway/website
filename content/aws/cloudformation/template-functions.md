@@ -5,7 +5,7 @@ weight: 2
 
 CloudFormation supports built-in functions in your templates. Those range from referencing other resources to building custom strings or importing values from other stacks.
 
-In the following sections we'll go through the functions you'll use most often with a few practical examples. Check out the [full template functions documentation](TODO) for all supported functions.
+In the following sections we'll go through the functions you'll use most often with a few practical examples. Check out the [full template functions documentation](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html) for all supported functions.
 
 For YAML template files AWS allows for a shorthand syntax. Instead of writing
 
