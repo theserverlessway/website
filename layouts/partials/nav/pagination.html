@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light">
   <div class="container">
     <div class="row w-100">
-      <a class="btn btn-light col-12" href="{{ .Parent.Permalink }}">Back to Overview</a>
+      <a class="btn btn-light col-12" href="{{ .Parent.RelPermalink }}">Back to Overview</a>
       {{ if not .Params.disable_pagination}}
         {{ if .NextInSection }}
-          <a class="btn btn-light col" href="{{ .NextInSection.Permalink }}"><< {{ .NextInSection.Title }}</a>
+          <a class="btn btn-light col" href="{{ .NextInSection.RelPermalink }}"><< {{ .NextInSection.Title }}</a>
         {{ end }}
         {{ if .PrevInSection }}
-          <a class="btn btn-light col" href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }} >></a>
+          <a class="btn btn-light col" href="{{ .PrevInSection.RelPermalink }}">{{ .PrevInSection.Title }} >></a>
         {{ end }}
       {{ end }}
     </div>

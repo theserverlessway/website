@@ -2,11 +2,11 @@
   <div class="container">
     <div class="row w-100">
       {{ if not (eq .Parent.Kind "home") }}
-        <a class="btn btn-light col-12" href="{{ .Parent.Permalink }}">Back to Overview</a>
+        <a class="btn btn-light col-12" href="{{ .Parent.RelPermalink }}">Back to Overview</a>
       {{ end }}
       {{ if not .Params.disable_section_links }}
         {{ range (sort (union .Sections .Paginator.Pages) ".Params.weight") }}
-          <a class="btn btn-light col-12 col-sm"  href="{{ .Permalink }}">{{.Title}}</a>
+          <a class="btn btn-light col-12 col-sm"  href="{{ .RelPermalink }}">{{.Title}}</a>
         {{ end }}
       {{ end }}
     </div>
