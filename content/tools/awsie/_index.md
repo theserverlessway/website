@@ -7,7 +7,7 @@ disable_pagination: true
 
  [![Build Status](https://travis-ci.org/flomotlik/awsie.svg?branch=master)](https://travis-ci.org/flomotlik/awsie)
 [![PyPI version](https://badge.fury.io/py/awsie.svg)](https://pypi.python.org/pypi/awsie)
-[![license](https://img.shields.io/github/license/flomotlik/awsie.svg)](LICENSE)
+[![license](https://img.shields.io/github/license/flomotlik/awsie.svg)](https://github.com/flomotlik/awsie/blob/master/LICENSE)
 [![Coverage Status](https://coveralls.io/repos/github/flomotlik/awsie/badge.svg?branch=master)](https://coveralls.io/github/flomotlik/awsie?branch=master)
 
 pronounced /ˈɒzi/ oz-ee like our great friends from down under.

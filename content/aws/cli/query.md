@@ -17,7 +17,7 @@ The following very simple example will only select the names of CloudFormation s
 ]
 ```
 
-This together with the `--output` option and its text or table output give you a lot of control over how to present information from the AWS CLI. They can be easily chained together to build powerful tools, for example [awsinfo](/tool/awsinfo) is written completely in bash and uses the `--query` option extensively to give you quick access to the most important information on your AWS resources. You can also check out the [awsinfo code](https://github.com/flomotlik/awsinfo/tree/master/scripts/commands) to see many examples of JMESPath.
+This together with the `--output` option and its text or table output give you a lot of control over how to present information from the AWS CLI. They can be easily chained together to build powerful tools, for example [awsinfo](/tools/awsinfo) is written completely in bash and uses the `--query` option extensively to give you quick access to the most important information on your AWS resources. You can also check out the [awsinfo code](https://github.com/flomotlik/awsinfo/tree/master/scripts/commands) to see many examples of JMESPath.
 
 This makes it even clearer that the AWS CLI is great as a Shell SDK. You can easily write shell scripts or Makefiles that call the AWS CLI with the `--query` and `--output` option.
 
