@@ -200,6 +200,18 @@ In the Value field you're not limited to `Ref` or `GetAtt` but can use any [buil
 
 After redeploying with the above yaml config added you should see the URLs as part of the Stack Outputs.
 
+### Joining list output avlues
+
+One caveat with Outputs is that they only support strings as values. This means if you want to output or export a list of items (e.g. the security groups associated with a loadbalancer) you have to join them into a string.
+
+```
+Outputs:
+  LoadBalancerSecurityGroups:
+    Description: Security Groups associated with our Main Loadbalancer
+    Value: !Join [',', !GetAtt LoadBalancer.SecurityGroups]
+```
+
+
 * [Output Documentation](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html) in the official AWS Documentation.
 
 
