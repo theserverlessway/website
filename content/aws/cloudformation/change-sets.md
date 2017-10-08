@@ -1,6 +1,6 @@
 ---
-title: CloudFormation ChangeSets
-weight: 2
+title: ChangeSets
+weight: 3
 ---
 
 ChangeSets are the main way how you should deploy to CloudFormation. They allow you to see exactly what steps CloudFormation would take once you deploy the ChangeSet, so you can find any problems beforehand.

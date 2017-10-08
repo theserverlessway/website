@@ -1,5 +1,5 @@
 ---
-title: CloudFormation Templates
+title: Templates
 weight: 1
 ---
 
