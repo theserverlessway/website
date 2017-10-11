@@ -1,6 +1,8 @@
 baseURL = "https://theserverlessway.com/"
 languageCode = "en-us"
 title = "The Serverless Way"
+googleAnalytics = "UA-107909134-1"
+
 
 [[menu.main]]
     name = "About Serverless"
