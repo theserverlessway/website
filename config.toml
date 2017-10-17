@@ -35,6 +35,13 @@ googleAnalytics = "UA-107909134-1"
     identifier = "twitter"
     url = "https://twitter.com/flomotlik"
 
+[[menu.main]]
+    name = ""
+    pre = '<i class="fa fa-slack" alt="Slack Link" class="d-inline-block align-top"></i>'
+    weight = -70
+    identifier = "slack"
+    url = "http://bit.ly/serverless-slack"
+
 [[menu.side]]
     name = "Guides"
     weight = -80
