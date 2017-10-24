@@ -25,9 +25,9 @@ After years as Co-Founder and CTO of [Codeship](https://codeship.com) and CTO of
   * Led the re-write of Serverless from 0.x to 1.x together with a large community of Open Source contributors
   * Talked with and helped many companies, from small teams to large enterprises, with their infrastructure
 * Regular Speaker at Serverless Conferences
-  * [ServerlessConf 2016 London](https://www.youtube.com/watch?v=ygGmigMBVfI) - Getting the most out of the Serverless Framework
-  * [ServerlessConf 2017 Austin](https://www.youtube.com/watch?v=ELlQVTAKc8A) - How Infrastructure Tooling will make or break Serverless Infrastructure
-  * [ServerlessConf 2017 New York](https://nyc.serverlessconf.io/speakers#) - Serverless and Software Craftsmanship
+  * ServerlessConf 2016 London - Getting the most out of the Serverless Framework - [Video](https://www.youtube.com/watch?v=ygGmigMBVfI)
+  * ServerlessConf 2017 Austin - How Infrastructure Tooling will make or break Serverless Infrastructure - [Video](https://www.youtube.com/watch?v=ELlQVTAKc8A) - [Slides](https://speakerdeck.com/flomotlik/how-tooling-will-make-or-break-serverless-infrastructure)
+  * ServerlessConf 2017 New York - Serverless and Software Craftsmanship - [Slides](https://speakerdeck.com/flomotlik/serverless-and-software-craftsmanship)
 
 ## Get in touch
 
