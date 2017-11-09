@@ -42,7 +42,7 @@ alias awsinfo='docker run -it -v ~/.aws:/root/.aws -e AWS_ACCESS_KEY_ID -e AWS_S
 
 ### Whalebrew
 
-If you're using [Whalebrew](https://github.com/bfirsh/whalebrew)(Which I highly recommend you doing) simply run the following to install:
+If you're using [Whalebrew](https://github.com/bfirsh/whalebrew)(Which I highly recommend) simply run the following to install:
 
 ```bash
 whalebrew install flomotlik/awsinfo
@@ -57,7 +57,9 @@ To update the Docker container run `docker pull flomotlik/awsinfo:latest`
 `awsinfo` commands support commands and subcommands, for example you can run `awsinfo logs` to print log messages
 or `awsinfo logs groups` to get a list of all log groups in the current account and region.
 
-To see all available commands check out the following list or run `awsinfo commands`.
+To see all supported services check out the following list or run `awsinfo commands`.
+You can see all the available commands for a service by running `awsinfo commands SERVICE`, e.g.
+`awsinfo commands ec2`.
 
 You can run any command with `--help` (e.g. `awsinfo logs --help`) to see the same help
 page that is in the repo (and linked below).
@@ -90,7 +92,15 @@ Following is a list of all available commands and links to their source document
 * [`ec2 security-groups`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/ec2/security-groups.md)
 * [`ec2 subnets`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/ec2/subnets.md)
 * [`ecs `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/ecs/index.md)
+* [`elasticbeanstalk `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elasticbeanstalk/index.md)
+* [`elasticbeanstalk applications`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elasticbeanstalk/applications.md)
+* [`elasticbeanstalk events`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elasticbeanstalk/events.md)
+* [`elasticbeanstalk health`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elasticbeanstalk/health.md)
+* [`elasticbeanstalk instance-health`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elasticbeanstalk/instance-health.md)
+* [`elasticbeanstalk stacks`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elasticbeanstalk/stacks.md)
+* [`elasticbeanstalk versions`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elasticbeanstalk/versions.md)
 * [`elb `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elb/index.md)
+* [`iam aws-policies`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/iam/aws-policies.md)
 * [`iam groups`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/iam/groups.md)
 * [`iam instance-profiles`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/iam/instance-profiles.md)
 * [`iam policies`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/iam/policies.md)
