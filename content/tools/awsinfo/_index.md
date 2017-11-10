@@ -96,7 +96,7 @@ Following is a list of all available commands and links to their source document
 * [`elasticbeanstalk applications`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elasticbeanstalk/applications.md)
 * [`elasticbeanstalk events`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elasticbeanstalk/events.md)
 * [`elasticbeanstalk health`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elasticbeanstalk/health.md)
-* [`elasticbeanstalk instance-health`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elasticbeanstalk/instance-health.md)
+* [`elasticbeanstalk instances`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elasticbeanstalk/instances.md)
 * [`elasticbeanstalk stacks`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elasticbeanstalk/stacks.md)
 * [`elasticbeanstalk versions`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elasticbeanstalk/versions.md)
 * [`elb `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elb/index.md)
