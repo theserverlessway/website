@@ -71,6 +71,7 @@ You can list all supported services with `awsinfo commands` and get a list of al
 Following is a list of all available commands and links to their source documentation files that are also used when you call a command with `--help`
 
 * [`acm `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/acm/index.md)
+* [`assume `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/assume/index.md)
 * [`cfn `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/cfn/index.md)
 * [`cfn change-set`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/cfn/change-set.md)
 * [`cfn change-sets`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/cfn/change-sets.md)
@@ -100,6 +101,7 @@ Following is a list of all available commands and links to their source document
 * [`elasticbeanstalk stacks`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elasticbeanstalk/stacks.md)
 * [`elasticbeanstalk versions`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elasticbeanstalk/versions.md)
 * [`elb `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elb/index.md)
+* [`iam `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/iam/index.md)
 * [`iam aws-policies`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/iam/aws-policies.md)
 * [`iam groups`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/iam/groups.md)
 * [`iam instance-profiles`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/iam/instance-profiles.md)
@@ -108,7 +110,6 @@ Following is a list of all available commands and links to their source document
 * [`iam role-policy`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/iam/role-policy.md)
 * [`iam role`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/iam/role.md)
 * [`iam roles`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/iam/roles.md)
-* [`iam user`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/iam/user.md)
 * [`iam users`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/iam/users.md)
 * [`kms `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/kms/index.md)
 * [`kms aliases`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/kms/aliases.md)
@@ -123,4 +124,3 @@ Following is a list of all available commands and links to their source document
 * [`sns `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/sns/index.md)
 * [`sns subscriptions`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/sns/subscriptions.md)
 * [`sqs `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/sqs/index.md)
-* [`sts assume`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/sts/assume.md)
