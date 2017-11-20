@@ -5,6 +5,7 @@ build: clean
 	hugo
 
 release: build deploy-dev check-dev deploy-prod check-prod
+	echo RELEASED NEW WEBSITE
 
 deploy-prod: build
 	awsie tslw-infrastructure s3 sync public s3://cf:TheserverlesswayComWebBucket: --delete
