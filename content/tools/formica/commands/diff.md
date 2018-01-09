@@ -32,4 +32,4 @@ Together with [`formica describe`]({{< relref "describe.md" >}}) you can underst
 | --profile PROFILE                                  | The AWS profile to use. |
 | --region REGION                                    | The AWS region to use. |
 | --vars KEY1=Value KEY2=Value2                      | Add a variable for use in Jinja2 templates. |
-| --config-file (-c) CONFIG_FILE                     | Set the config file to use |
+| --config-file (-c) CONFIG_FILE                     | Set the config files to use |

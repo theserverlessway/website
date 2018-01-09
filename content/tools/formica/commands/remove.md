@@ -32,4 +32,5 @@ Removing Stack and waiting for it to be removed, ...
 | --stack (-s) STACK                                 | The stack you want to create. |
 | --profile PROFILE                                  | The AWS profile to use. |
 | --region REGION                                    | The AWS region to use. |
-| --config-file (-c) CONFIG_FILE                     | Set the config file to use |
+| --config-file (-c) CONFIG_FILE                     | Set the config files to use |
+| --role-arn ROLE_ARN                                | Set a separate role ARN to pass to the stack |
