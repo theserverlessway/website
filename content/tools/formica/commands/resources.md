@@ -27,4 +27,4 @@ root@67c57a89511a:/app/docs/examples/s3-bucket# formica resources --stack formic
 | --stack (-s) STACK                                 | The stack you want to create. |
 | --profile PROFILE                                  | The AWS profile to use. |
 | --region REGION                                    | The AWS region to use. |
-| --config-file (-c) CONFIG_FILE                     | Set the config file to use |
+| --config-file (-c) CONFIG_FILE                     | Set the config files to use |
