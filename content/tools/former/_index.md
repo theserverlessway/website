@@ -20,11 +20,23 @@ former can be installed through pip:
 pip install former
 ```
 
+or install with Whalebrew and Docker:
+
+```shell
+whalebrew install flomotlik/former
+
+# For getting updates
+docker pull flomotlik/former
+```
+
+
 Alternatively you can clone this repository and run
 
 ```shell
 python setup.py install
 ```
+
+
 
 ## Example
 
@@ -70,3 +82,4 @@ want to get a quick overview for a subtype.
 ## Options
 
 * `--json` Print output in json instead of yaml
+* `-r` Only print required parameters
