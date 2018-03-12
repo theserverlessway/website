@@ -31,8 +31,4 @@ After years as Co-Founder and CTO of [Codeship](https://codeship.com) and CTO of
 
 ## Get in touch
 
-Please fill out the following form so we can reach out to you and discuss working together:
-
-{{< typeform >}}
-
 Contact email: [consulting@theserverlessway.com](mailto:consulting@theserverlessway.com)
