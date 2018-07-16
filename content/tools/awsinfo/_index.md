@@ -71,6 +71,11 @@ You can list all supported services with `awsinfo commands` and get a list of al
 Following is a list of all available commands and links to their source documentation files that are also used when you call a command with `--help`
 
 * [`acm `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/acm/index.md)
+* [`appsync `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/appsync/index.md)
+* [`appsync datasources`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/appsync/datasources.md)
+* [`appsync resolvers`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/appsync/resolvers.md)
+* [`appsync schema`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/appsync/schema.md)
+* [`appsync types`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/appsync/types.md)
 * [`assume `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/assume/index.md)
 * [`assume role`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/assume/role.md)
 * [`cfn `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/cfn/index.md)
