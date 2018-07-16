@@ -112,6 +112,8 @@ Following is a list of all available commands and links to their source document
 * [`elasticbeanstalk versions`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elasticbeanstalk/versions.md)
 * [`elb `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elb/index.md)
 * [`elb old`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/elb/old.md)
+* [`es `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/es/index.md)
+* [`es domain`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/es/domain.md)
 * [`iam `](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/iam/index.md)
 * [`iam aws-policies`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/iam/aws-policies.md)
 * [`iam groups`](https://github.com/flomotlik/awsinfo/blob/master/scripts/commands/iam/groups.md)
