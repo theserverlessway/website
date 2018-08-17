@@ -203,3 +203,48 @@ Resources:
         Zipfile: {{ code | code_escape }}
       Runtime: "python2.7"
 ```
+
+
+### novalue
+
+Sometimes you only want to add a property to a resource in case a variable is set, for example from a parent
+module. One way to implement this would be to surround that parameter with an if statement, but that
+makes the templates a bit bloated.
+
+Another way is to use the `novalue` filter to use the `AWS::NoValue` pseudoparameter CloudFormation provides
+in case a variable is empty. For example in case we want to create a Lambda function in a module and set its
+name only if the `Name` variable is set, otherwise return `AWS::NoValue` we would do the following:
+
+```
+Name: {{ Name | novalue }}
+```
+
+### now and utcnow
+
+Sometimes you need to set dates in your template. For this we've included [Arrow](https://arrow.readthedocs.io/en/latest/)
+and made it available through the `now` and `utcnow` functions.
+
+For example if we create an API Key for an AppSync Api we need to set an expiration on the Key. To make it easy to
+set forward moving keys we can set it to 1week after deployment:
+
+```
+Expires: {{now().shift(weeks=1).timestamp}}
+```
+
+Which will result in
+
+```
+"Expires": 1535117482
+```
+
+Another use case is when you want to add a random string to your template, for example an API Gateway deployment
+won't redeploy unless you rename it on every deploy. To do this you can do the following:
+
+```
+ApiGatewayDeployment{{now().timestamp}}:
+  Type: ....
+  Properties: ...
+```
+
+So every time you redeploy the stack the old deployment will be removed and replaced with a new one. Check out the
+[Arrow documentation(https://arrow.readthedocs.io/en/latest/) for all details.
