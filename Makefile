@@ -14,7 +14,7 @@ deploy-dev: build
 	awsie tslw-infrastructure s3 sync public s3://cf:DevelopmentTheserverlesswayComWebBucket: --delete
 
 check-dev:
-	linkchecker $(shell awsie tslw-infrastructure --command "echo cf:DevelopmentTheserverlesswayComWebBucketWebsiteUrl:")
+	linkchecker $(shell awsie tslw-infrastructure --command echo cf:DevelopmentTheserverlesswayComWebBucketWebsiteUrl:)
 
 check-prod:
 	linkchecker https://theserverlessway.com
