@@ -56,9 +56,3 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     weight = -80
     identifier = "about"
     url = "/about"
-
-[[menu.footer]]
-    name = "Contact/Imprint"
-    weight = -3
-    identifier = "contact"
-    url = "/contact"
