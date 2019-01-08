@@ -39,10 +39,6 @@ body {
   /*background-color: #eeeeee;*/
 }
 
-.footer{
-  border-top: 1px solid black;
-}
-
 .typeform-widget {
   border: 1px solid grey;
 }
@@ -52,4 +48,17 @@ body {
   min-height: -webkit-calc(100% - 186px);
   min-height: -moz-calc(100% - 186px);
   min-height: calc(100% - 186px);
+}
+
+.sidebar {
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar .nav-link {
+    color: #333;
+}
+
+.sidebar .nav-link:hover {
+    font-weight: bold;
+    color: #333;
 }

@@ -1,5 +1,7 @@
 {{ partial "head" . }}
 {{ partial "content/title" . }}
-{{ partial "nav/pagination" . }}
-{{ partial "content" . }}
+{{ partial "content/header" .}}
+{{ partial "content/sidebar" .Parent }}
+{{ partial "content/body" . }}
+{{ partial "content/footer" .}}
 {{ partial "foot" . }}

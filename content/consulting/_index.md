@@ -32,3 +32,15 @@ After years as Co-Founder and CTO of [Codeship](https://codeship.com) and CTO of
 ## Get in touch
 
 Contact email: [consulting@theserverlessway.com](mailto:consulting@theserverlessway.com)
+
+## Imprint
+
+MCCD GMBH
+
+```
+Krenntal 8,
+3130, Herzogenburg
+Austria
+```
+
+[flo@theserverlessway.com](mailto:flo@theserverlessway.com)

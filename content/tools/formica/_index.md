@@ -92,7 +92,7 @@ Resource Changes:
 Change set created, please deploy.
 ```
 
-You can also use [`formica describe`]({{< relref "tools/formica/commands/describe.md" >}}) to describe the changes a ChangeSet would perform in a later step. For more detail on the ChangeSet description check out the [describe command documentation]({{< relref "tools/formica/commands/describe.md" >}}).
+You can also use [`formica describe`]({{< relref "/tools/formica/commands/describe.md" >}}) to describe the changes a ChangeSet would perform in a later step. For more detail on the ChangeSet description check out the [describe command documentation]({{< relref "/tools/formica/commands/describe.md" >}}).
 
 All changes, whether you want to create a new stack or update an existing one, are done through [ChangeSets](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-changesets.html). This makes sure you can inspect the specific actions that CloudFormation will take before deploying them. In a CI context you can of course simply run both commands one after the other to get a fully automated deployment.
 

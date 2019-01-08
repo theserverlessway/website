@@ -4,6 +4,9 @@ clean:
 build: clean
 	hugo
 
+run:
+	hugo server
+
 release: build deploy-dev check-dev deploy-prod check-prod
 	echo RELEASED NEW WEBSITE
 

@@ -133,7 +133,7 @@ But the WebBucket still requires `WebBucketName` to be set, which goes against w
 
 CloudFormation doesn't allow us to use the empty string in the `BucketName` though, so we have to use an `If` together with the `AWS::NoValue` built-in to let CloudFormation know to simply remove that Property from the template. It will be treated as if it were never set, thus telling CF to auto-generate the `BucketName`
 
-The syntax for the different built-in functions (`If`, `Equal`, `Not` in this case) are a bit confusing at first, as you have to use lists or sometimes lists of lists. For more details check out the [built-in functions guide]({{< relref "aws/cloudformation/template-functions.md" >}}).
+The syntax for the different built-in functions (`If`, `Equal`, `Not` in this case) are a bit confusing at first, as you have to use lists or sometimes lists of lists. For more details check out the [built-in functions guide]({{< relref "/aws/cloudformation/template-functions.md" >}}).
 
 ```yaml
 Parameters:

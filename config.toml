@@ -2,7 +2,7 @@ baseURL = "https://theserverlessway.com/"
 languageCode = "en-us"
 title = "The Serverless Way"
 googleAnalytics = "UA-107909134-1"
-
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [[menu.main]]
     name = "About Serverless"
@@ -42,6 +42,15 @@ googleAnalytics = "UA-107909134-1"
     identifier = "slack"
     url = "http://bit.ly/serverless-slack"
 
+[[menu.main]]
+    name = ""
+    pre = '<i class="fa fa-envelope" alt="Email Link" class="d-inline-block align-top"></i>'
+    weight = -70
+    identifier = "email"
+    url = "mailto:flo@theserverlessway.com"
+
+
+
 [[menu.side]]
     name = "Guides"
     weight = -80
@@ -49,13 +58,7 @@ googleAnalytics = "UA-107909134-1"
     url = "/about"
 
 [[menu.footer]]
-    name = "Contact"
+    name = "Contact/Imprint"
     weight = -3
     identifier = "contact"
     url = "/contact"
-
-[[menu.footer]]
-    name = "Consulting"
-    weight = -1
-    identifier = "consulting"
-    url = "/consulting"
