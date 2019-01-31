@@ -79,7 +79,22 @@ Resources:
 Of course this is not valid CloudFormation as the `LoginProfile` is not a valid CF Resource. But it helps when you
 want to get a quick overview for a subtype.
 
+It often helps to open the docs page right with the resource and the `--docs` or `-d` option will do that for you
+and print the full resource to the shell as well.
+
+```bash
+root@e41871e1eb3e:/app# former iam user loginprofile -d
+Resources:
+  AWSIAMUserLoginProfile:
+    Parameters:
+      Password: String - Required
+      PasswordResetRequired: Boolean
+    Type: AWS::IAM::User.LoginProfile
+```
+
 ## Options
 
 * `--json` Print output in json instead of yaml
-* `-r` Only print required parameters
+* `--required`(`-r`) Only print required parameters
+* `--docs`(`-d`) Open the documentation page of the resource in your browser
+* `--debug` Open the documentation page of the resource in your browser
