@@ -149,7 +149,7 @@ Resources:
           - "Arn"
       Code:
         Zipfile: "{{ code('code.py') }}"
-      Runtime: "python2.7"
+      Runtime: "python3.7"
 ```
 
 ```python
@@ -175,7 +175,7 @@ Running `formica template` in the same directory will result in the following Cl
                         "Arn"
                     ]
                 },
-                "Runtime": "python2.7"
+                "Runtime": "python3.7"
             },
             "Type": "AWS::Lambda::Function"
         }
@@ -201,7 +201,7 @@ Resources:
           - "Arn"
       Code:
         Zipfile: {{ code | code_escape }}
-      Runtime: "python2.7"
+      Runtime: "python3.7"
 ```
 
 
