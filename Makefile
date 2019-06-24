@@ -1,10 +1,13 @@
 clean:
 	rm -fr public
 
-build: clean
+update:
+	git submodule update --recursive --remote
+
+build: clean update
 	hugo
 
-run:
+run: update
 	hugo server
 
 release: build deploy-dev check-dev deploy-prod check-prod

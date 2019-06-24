@@ -1,0 +1,12 @@
+[submodule "modules/awsinfo"]
+	path = modules/awsinfo
+	url = git@github.com:theserverlessway/awsinfo.git
+[submodule "modules/awsie"]
+	path = modules/awsie
+	url = git@github.com:theserverlessway/awsie.git
+[submodule "modules/former"]
+	path = modules/former
+	url = git@github.com:theserverlessway/former.git
+[submodule "modules/formica"]
+	path = modules/formica
+	url = git@github.com:theserverlessway/formica.git
