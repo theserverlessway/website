@@ -14,13 +14,13 @@ release: build deploy-dev check-dev deploy-prod check-prod
 	echo RELEASED NEW WEBSITE
 
 deploy-prod: build
-	awsie tslw-infrastructure s3 sync public s3://cf:TheserverlesswayComWebBucket: --delete
+	awsie tslw-infrastructure s3 sync public s3://cf:CloudfrontWebBucket: --delete
 
 deploy-dev: build
-	awsie tslw-infrastructure s3 sync public s3://cf:DevelopmentTheserverlesswayComWebBucket: --delete
+	awsie tslw-infrastructure s3 sync public s3://cf:CloudfrontdevelopmentWebBucket: --delete
 
 check-dev:
-	linkchecker $(shell awsie tslw-infrastructure --command echo cf:DevelopmentTheserverlesswayComWebBucketWebsiteUrl:)
+	linkchecker https://dev.theserverlessway.com
 
 check-prod:
 	linkchecker https://theserverlessway.com
