@@ -1,7 +1,7 @@
 <div class="col-12 col-md-3 pt-3 bg-light sidebar mh-100">
 <nav class="">
   <ul class="nav flex-column">
-      {{ range (sort (union .Sections .Paginator.Pages) ".Params.weight") }}
+      {{ range (sort (union .Sections (.Paginator 30).Pages) ".Params.weight") }}
         <li class="nav-item">
           <a class="nav-link"  href="{{ .RelPermalink }}">{{.Title}}</a>
         </li>
