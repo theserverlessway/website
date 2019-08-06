@@ -5,6 +5,12 @@ googleAnalytics = "UA-107909134-1"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [[menu.main]]
+    name = "Blog"
+    weight = -130
+    identifier = "blog"
+    url = "https://blog.theserverlessway.com"
+
+[[menu.main]]
     name = "About Serverless"
     weight = -120
     identifier = "serverless"
