@@ -3,7 +3,7 @@ title: The Serverless Way Tool Suite
 subtitle: Powerful Tools to make building on AWS simple
 ---
 
-*The Serverless Way Tool Suite* is a collection of small focused tools to help you build on AWS. They've been built becaus existing tools were either not of adequate quality, or were trying to add layers on top of AWS instead of purely focusing on bringing better usability to AWS services.
+*The Serverless Way Tool Suite* is a collection of small focused tools to help you build on AWS. They've been built because existing tools were either not of adequate quality, or were trying to add layers on top of AWS instead of purely focusing on bringing better usability to AWS services.
 
 They all follow the same set of ideas to make the tool suite a consistent experience.
 
