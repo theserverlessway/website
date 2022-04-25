@@ -10,7 +10,7 @@ build: clean update
 run: update
 	hugo server
 
-release: build deploy-dev check-dev deploy-prod check-prod
+release: build deploy-dev deploy-prod
 	echo RELEASED NEW WEBSITE
 
 deploy-prod: build
